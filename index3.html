@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <a href="index1.html">Task 1</a>
+    <a href="index2.html">Task 2</a>
+    <a href="index4.html">Task 4</a>
+    <a href="index5.html">Task 5</a>
+
+    <p>
+      Описание задачи: Дан массив products. Уменьшите цену каждого продукта на
+      15% с использованием метода forEach
+    </p>
+
+    <script>
+      const products = [
+        {
+          id: 3,
+          price: 200,
+        },
+        {
+          id: 4,
+          price: 900,
+        },
+        {
+          id: 1,
+          price: 1000,
+        },
+      ];
+
+      products.forEach((product) => {
+        product.price = product.price - product.price * 0.85;
+      });
+
+      console.log(products);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4</title>
+  </head>
+  <body>
+    <a href="index1.html">Task 1</a>
+    <a href="index2.html">Task 2</a>
+    <a href="index3.html">Task 3</a>
+    <a href="index5.html">Task 5</a>
+
+    <p>
+      Описание задачи: 1. Выведите в консоль массив продуктов, у которых есть
+      хотя бы одна фотография, используя метод filter. 2. Отсортируйте массив
+      products по цене в порядке возрастания и выведите отсортированный массив в
+      консоль.
+    </p>
+    <script>
+      const products = [
+        {
+          id: 3,
+          price: 127,
+          photos: ["1.jpg", "2.jpg"],
+        },
+        {
+          id: 5,
+          price: 499,
+          photos: [],
+        },
+        {
+          id: 10,
+          price: 26,
+          photos: ["3.jpg"],
+        },
+        {
+          id: 8,
+          price: 78,
+        },
+      ];
+
+      // Task 1: Filter products with at least one photo
+      const filteredProducts = products.filter((product) => product.photos.length > 0);
+      console.log("Products with at least one photo:", filteredProducts);
+
+      // Task 2: Sort products by price in ascending order
+      const sortedProducts = filteredProducts.sort((a, b) => a.price - b.price);
+      console.log("Sorted products by price:", sortedProducts);
+    </script>
+  </body>
+</html>

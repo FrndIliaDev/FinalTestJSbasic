@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <a href="index1.html">Task 1</a>
+    <a href="index2.html">Task 2</a>
+    <a href="index3.html">Task 3</a>
+    <a href="index4.html">Task 4</a>
+
+    <p>
+      Описание задачи: Есть два массива en и ru. Объедините их в объект, где
+      значения из первого массива будут ключами, а значения из второго массива —
+      значениями
+    </p>
+    <script>
+      const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+      const ru = [
+        "понедельник",
+        "вторник",
+        "среда",
+        "четверг",
+        "пятница",
+        "суббота",
+        "воскресенье",
+      ];
+
+      const weekDays = {};
+      for (let i = 0; i < en.length; i++) {
+        weekDays[en[i]] = ru[i];
+      }
+
+      console.log(weekDays);
+    </script>
+  </body>
+</html>
